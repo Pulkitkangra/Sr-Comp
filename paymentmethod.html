@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options - SR Computers</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .payment-card {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            max-width: 300px;
+        }
+
+        .payment-card :selection {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .payment-card img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .payment-card h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .payment-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .proceed-button {
+            display: block;
+            margin: 30px auto 0;
+            text-align: center;
+            background-color: #ffa41c;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            width: fit-content;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .proceed-button:hover {
+            background-color: #e69500;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="img/logo.png.webp" alt="SR Computers Logo" class="logo-img">
+        <div class="logo-text">SR Computers</div>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Cart</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Select Payment Method</h1>
+    <div class="payment-methods">
+        <!-- Cash on Delivery -->
+        <div class="payment-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Cash on Delivery">
+            <h2>Cash on Delivery</h2>
+            <p>Pay with cash when your order is delivered.</p>
+        </div>
+    </div>
+
+    <a href="#" class="proceed-button">Proceed to Payment</a>
+</div>
+
+</body>
+</html>
